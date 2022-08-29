@@ -5,10 +5,13 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set encoding=UTF-8
 
-// Plugins
 call plug#begin()
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
