@@ -16,6 +16,9 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -23,15 +26,19 @@ call plug#end()
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-"let g:airline_leftsep = "e0b8"
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline#extensions#tabline#left_sep = ''
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nmap <leader>n :NERDTreeFocus<CR>
+nmap <C-b> :NERDTreeToggle<CR>
+nmap <C-f> :NERDTreeFind<CR>
+nmap <leader>t :tabnext<CR>
+nmap <leader>r :tablast<CR>
+nmap <F4> :q<CR>
+nmap <C-s> :w<CR>
+imap <C-s> <esc>:w<CR>i
+nmap <C-p> :FZF<CR>
 
 set termguicolors
 
