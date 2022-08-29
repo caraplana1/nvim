@@ -19,6 +19,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'tc50cal/vim-terminal'
 
 call plug#end()
 
@@ -39,6 +40,8 @@ nmap <F4> :q<CR>
 nmap <C-s> :w<CR>
 imap <C-s> <esc>:w<CR>i
 nmap <C-p> :FZF<CR>
+tnoremap <Esc> <C-\><C-n>
+nmap <leader>ñ :TerminalSplit bash<CR>
 
 set termguicolors
 
