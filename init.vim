@@ -18,7 +18,6 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'tc50cal/vim-terminal'
 Plug 'tmsvg/pear-tree'
 
 call plug#end()
@@ -34,14 +33,12 @@ let g:airline#extensions#tabline#left_sep = ''
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <C-b> :NERDTreeToggle<CR>
 nmap <C-f> :NERDTreeFind<CR>
-nmap <leader>t :tabnext<CR>
-nmap <leader>r :tablast<CR>
 nmap <F4> :q<CR>
 nmap <C-s> :w<CR>
 imap <C-s> <esc>:w<CR>i
 nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
-nmap <leader>ñ :TerminalSplit bash<CR>
+nmap <leader>ñ :terminal<CR>
 nmap <C-f> :Rg<CR>
 
 set termguicolors
