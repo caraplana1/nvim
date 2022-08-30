@@ -36,7 +36,7 @@ nmap <C-b> :NERDTreeToggle<CR>
 nmap <C-f> :NERDTreeFind<CR>
 nmap <F4> :q<CR>
 nmap <C-s> :w<CR>
-imap <C-s> <esc>:w<CR>i
+imap <C-s> <esc>:w<CR>a
 nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>ñ :terminal<CR>
@@ -51,3 +51,13 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 
 colorscheme tokyonight
+
+let g:pear_tree_pairs = {
+            \ '(': {'closer': ')'},
+            \ '[': {'closer': ']'},
+            \ '{': {'closer': '}'},
+            \ "'": {'closer': "'"},
+            \ "<": {'closer': ">"},
+            \ "/*": {'closer': "*/"},
+            \ '"': {'closer': '"'}
+            \ }
