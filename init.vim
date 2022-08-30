@@ -42,6 +42,7 @@ imap <C-s> <esc>:w<CR>i
 nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>ñ :TerminalSplit bash<CR>
+nmap <C-f> :Rg<CR>
 
 set termguicolors
 
