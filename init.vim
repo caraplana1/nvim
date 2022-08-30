@@ -40,6 +40,9 @@ nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>ñ :terminal<CR>
 nmap <C-f> :Rg<CR>
+nmap <C-l> :ls<CR>
+nmap <leader>n :bn<CR>
+nmap <leader>p :bp<CR>
 
 set termguicolors
 
