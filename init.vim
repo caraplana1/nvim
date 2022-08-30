@@ -19,6 +19,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tmsvg/pear-tree'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
