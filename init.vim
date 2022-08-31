@@ -39,7 +39,7 @@ nmap <C-s> :w<CR>
 imap <C-s> <esc>:w<CR>a
 nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
-nmap <leader>ñ <Plug>(coc-terminal-toggle)<CR>
+nmap <f1> <Plug>(coc-terminal-toggle)<CR>
 nmap <C-f> :Rg<CR>
 nmap <C-l> :ls<CR>
 nmap <leader>n :bn<CR>
@@ -59,15 +59,6 @@ let g:tokyonight_enable_italic = 1
 
 colorscheme tokyonight
 
-let g:pear_tree_pairs = {
-            \ '(': {'closer': ')'},
-            \ '[': {'closer': ']'},
-            \ '{': {'closer': '}'},
-            \ "'": {'closer': "'"},
-            \ "<": {'closer': ">"},
-            \ "/*": {'closer': "*/"},
-            \ '"': {'closer': '"'}
-            \ }
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
