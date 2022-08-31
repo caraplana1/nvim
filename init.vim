@@ -43,7 +43,7 @@ nmap <leader>ñ :terminal<CR>
 nmap <C-f> :Rg<CR>
 nmap <C-l> :ls<CR>
 nmap <leader>n :bn<CR>
-nmap <leader>p :bp<CR>
+nmap <leader>b :bp<CR>
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>O
