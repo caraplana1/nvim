@@ -39,7 +39,7 @@ nmap <C-s> :w<CR>
 imap <C-s> <esc>:w<CR>a
 nmap <C-p> :FZF<CR>
 tnoremap <Esc> <C-\><C-n>
-nmap <leader>ñ :terminal<CR>
+nmap <leader>ñ <Plug>(coc-terminal-toggle)<CR>
 nmap <C-f> :Rg<CR>
 nmap <C-l> :ls<CR>
 nmap <leader>n :bn<CR>
