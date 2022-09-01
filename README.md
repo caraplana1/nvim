@@ -1,6 +1,8 @@
 # Neovim Config
+Clone this repo in ~/.config folder before installing neovim.
+* IMPORTANT! You need novim 0.5.
+
 ## Install
-IMPORTAND! You need novim 0.5
 
 Run the dependecies script depending of your distribution
 ```bash
