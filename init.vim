@@ -6,6 +6,7 @@ set smarttab
 set softtabstop=4
 set mouse=a
 set encoding=UTF-8
+set cursorline
 let mapleader = ","
 
 call plug#begin()
@@ -38,9 +39,10 @@ nmap <F4> :q<CR>
 nmap <C-s> :w<CR>
 imap <C-s> <esc>:w<CR>a
 nmap <C-p> :FZF<CR>
+nmap <C-r> :Rg<CR>
+nmap <C-f> :/
 tnoremap <Esc> <C-\><C-n>
 nmap <f1> <Plug>(coc-terminal-toggle)<CR>
-nmap <C-f> :Rg<CR>
 nmap <C-l> :ls<CR>
 nmap <leader>n :bn<CR>
 nmap <leader>b :bp<CR>
