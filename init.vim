@@ -9,13 +9,14 @@ set encoding=UTF-8
 set cursorline
 let mapleader = ","
 
+" Plugins
 call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
@@ -33,6 +34,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline#extensions#tabline#left_sep = ''
 
+" Mapping
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <C-b> :NERDTreeToggle<CR>
 nmap <C-f> :NERDTreeFind<CR>
@@ -54,12 +56,8 @@ inoremap [ []<Esc>i
 inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 
-set termguicolors
-
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1
-
-colorscheme tokyonight
+let g:seoul256_background = 237
+colo seoul256
 
 " Some servers have issues with backup files, see #649.
 set nobackup
