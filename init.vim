@@ -50,6 +50,8 @@ nmap <f1> <Plug>(coc-terminal-toggle)<CR>
 nmap <C-l> :ls<CR>
 nmap <leader>n :bn<CR>
 nmap <leader>b :bp<CR>
+nmap <leader>h :split<CR>
+nmap <leader>v :vsplit<CR>
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>O
