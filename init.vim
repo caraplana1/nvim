@@ -52,6 +52,7 @@ nmap <leader>n :bn<CR>
 nmap <leader>b :bp<CR>
 nmap <leader>h :split<CR>
 nmap <leader>v :vsplit<CR>
+nmap <leader>s :CocList marketplace<CR>
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>O
