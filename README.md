@@ -6,7 +6,7 @@ Clone this repo in ~/.config folder before installing neovim.
 
 ### Copy the fonts for the terminal
 ``` bash
-sudo cp ./Fonts/`mononoki-Regular Nerd Font Complete Mono.ttf` /usr/share/fonts/`mononoki-Regular Nerd Font Complete Mono.ttf`
+sudo cp "~/.config/nvim/Fonts/mononoki-Regular Nerd Font Complete Mono.ttf" "/usr/share/fonts/mononoki-Regular Nerd Font Complete Mono.ttf"
 ```
 
 ### Install neovim
