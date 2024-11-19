@@ -6,7 +6,7 @@ Clone this repo in ~/.config folder before installing neovim.
 
 ### Copy the fonts for the terminal
 ``` bash
-sudo cp ./Fonts/'mononoki-Regular Nerd Font Complete Mono.ttf' /usr/share/fonts/'mononoki-Regular Nerd Font Complete Mono.ttf'
+sudo cp ./Fonts/`mononoki-Regular Nerd Font Complete Mono.ttf` /usr/share/fonts/`mononoki-Regular Nerd Font Complete Mono.ttf`
 ```
 
 ### Install neovim
@@ -36,12 +36,12 @@ Enter neovim with
 ```bash
 nvim
 ```
-and write the following ":PlugInstall"
+and write the following `:PlugInstall`
 The plugins should be installed.
 
 ### Install coc pluggins
-After installing the plugins exit with 'F4' and enter again on neovim.
-Next write ':CocInstall coc-marketplace'
+After installing the plugins exit with `F4` and enter again on neovim.
+Next write `:CocInstall coc-marketplace`
 
-Now writing ',s' you should see all the avaible plugins for languages
+Now writing `,s` you should see all the avaible plugins for languages
 
