@@ -10,6 +10,7 @@ set encoding=UTF-8
 set cursorline
 let mapleader = ","
 
+" Extensions to pre-install
 let g:coc_global_extensions = [
 \ 'coc-terminal',
 \ 'coc-marketplace',
