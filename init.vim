@@ -45,6 +45,7 @@ imap <C-s> <esc>:w<CR>a
 nmap <C-p> :FZF<CR>
 nmap <C-r> :Rg<CR>
 nmap <C-f> :/
+nmap <C-a> ggVG
 tnoremap <Esc> <C-\><C-n>
 nmap <f1> <Plug>(coc-terminal-toggle)<CR>
 nmap <C-l> :ls<CR>
