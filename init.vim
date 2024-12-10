@@ -16,7 +16,8 @@ let g:coc_global_extensions = [
 \ 'coc-marketplace',
 \ 'coc-tsserver',
 \ 'coc-pyright',
-\ 'coc-clangd'
+\ 'coc-clangd',
+\ 'coc-pairs'
 \ ]
 
 " Plugins
@@ -63,12 +64,6 @@ nmap <leader>b :bp<CR>
 nmap <leader>h :split<CR>
 nmap <leader>v :vsplit<CR>
 nmap <leader>s :CocList marketplace<CR>
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O
-inoremap [ []<Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
 
 let g:seoul256_background = 237
 colo seoul256
