@@ -13,17 +13,27 @@ sudo cp "~/.config/nvim/Fonts/mononoki-Regular Nerd Font Complete Mono.ttf" "/us
 ```
 
 ### Install neovim
-
+UNIX
 ``` bash
 sudo apt install neovim -y # Ubuntu
 sudo dnf install neovim -y # Fedora
 ```
+WINDOWS
+``` powershell
+winget install Neovim.Neovim # Windows 8+
+```
+
 
 ### Install VimPlug
-
+UNIX
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+WINDOWS
+```powershell
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 ```
 
 ### Install OS Dependecies
@@ -34,10 +44,19 @@ sudo dnf install ripgrep clang-tools-extra # Fedora
 ```
 
 ### Install NodeJs
-
+UNIX
 ```bash
 curl -sL install-node.vercel.app/lts | sudo bash
 ```
+WINDOWS
+```powershell
+winget install Schniz.fnm
+
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
+fnm use --install-if-missing 22
+```
+
 ### Install Plugins
 
 Enter neovim with
