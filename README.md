@@ -14,13 +14,17 @@ sudo cp "~/.config/nvim/Fonts/mononoki-Regular Nerd Font Complete Mono.ttf" "/us
 
 ### Install neovim
 UNIX
+* Ubuntu
 ``` bash
-sudo apt install neovim -y # Ubuntu
-sudo dnf install neovim -y # Fedora
+sudo apt install neovim -y
 ```
-WINDOWS
+* Fedora
+```bash
+sudo dnf install neovim -y
+```
+WINDOWS 8+
 ``` powershell
-winget install Neovim.Neovim # Windows 8+
+winget install Neovim.Neovim
 ```
 
 
@@ -37,11 +41,16 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 ```
 
 ### Install OS Dependecies
-
+UNIX
+* Ubuntu
 ```bash
-sudo apt install ripgrep clangd # Ubuntu
-sudo dnf install ripgrep clang-tools-extra # Fedora
+sudo apt install ripgrep clangd
 ```
+* Fedora
+```bash
+sudo dnf install ripgrep clang-tools-extra
+```
+
 WINDOWS
 ```powershell
 winget install BurntSushi.ripgrep.MSVC
