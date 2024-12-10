@@ -42,6 +42,13 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 sudo apt install ripgrep clangd # Ubuntu
 sudo dnf install ripgrep clang-tools-extra # Fedora
 ```
+WINDOWS
+```powershell
+winget install BurntSushi.ripgrep.MSVC
+```
+```powershell
+winget install -e --id LLVM.LLVM
+```
 
 ### Install NodeJs
 UNIX
