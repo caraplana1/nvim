@@ -65,10 +65,7 @@ fnm use --install-if-missing 22
 ```
 
 ### Install Plugins
-
-Enter neovim with
+Run in the terminal
 ```bash
-nvim
+nvim -c "PlugInstall"
 ```
-and write the following `:PlugInstall`
-The plugins should be installed.
