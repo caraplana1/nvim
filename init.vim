@@ -10,6 +10,14 @@ set encoding=UTF-8
 set cursorline
 let mapleader = ","
 
+let g:coc_global_extensions = [
+\ 'coc-terminal',
+\ 'coc-marketplace',
+\ 'coc-tsserver',
+\ 'coc-pyright',
+\ 'coc-clangd'
+\ ]
+
 " Plugins
 call plug#begin()
 
@@ -21,7 +29,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() } }
 Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
 
