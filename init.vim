@@ -16,7 +16,9 @@ let g:coc_global_extensions = [
 \ 'coc-marketplace',
 \ 'coc-pyright',
 \ 'coc-clangd',
-\ 'coc-pairs'
+\ 'coc-pairs',
+\ 'coc-highlight',
+\ 'coc-json'
 \ ]
 
 " Plugins
@@ -35,6 +37,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
 
 call plug#end()
+
+" Highlight activation
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 "tabline configs
 let g:airline#extensions#tabline#enabled = 1
