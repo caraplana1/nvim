@@ -14,7 +14,6 @@ let mapleader = ","
 let g:coc_global_extensions = [
 \ 'coc-terminal',
 \ 'coc-marketplace',
-\ 'coc-tsserver',
 \ 'coc-pyright',
 \ 'coc-clangd',
 \ 'coc-pairs'
