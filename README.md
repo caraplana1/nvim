@@ -72,11 +72,3 @@ nvim
 ```
 and write the following `:PlugInstall`
 The plugins should be installed.
-
-### Install coc pluggins
-
-After installing the plugins exit with `F4` and enter again on neovim.
-Next write `:CocInstall coc-marketplace`
-
-Now writing `,s` you should see all the avaible plugins for languages
-
