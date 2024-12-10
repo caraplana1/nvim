@@ -1,6 +1,8 @@
 # Neovim Config
-
+UNIX
 Clone this repo in ~/.config folder before installing neovim.
+WINDOWS
+Clone this repo in ~/AppData/Local before installing neovim.
 
 * IMPORTANT! You need neovim 0.5.
 
