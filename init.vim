@@ -12,14 +12,16 @@ let mapleader = ","
 
 " Extensions to pre-install
 let g:coc_global_extensions = [
-\ 'coc-terminal',
+\ 'coc-markdownlint',
 \ 'coc-marketplace',
+\ 'coc-highlight',
+\ 'coc-terminal',
 \ 'coc-pyright',
 \ 'coc-clangd',
 \ 'coc-pairs',
-\ 'coc-highlight',
 \ 'coc-json'
 \ ]
+
 
 " Plugins
 call plug#begin()
