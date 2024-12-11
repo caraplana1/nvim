@@ -63,11 +63,11 @@ nmap <C-a> ggVG
 tnoremap <Esc> <C-\><C-n>
 nmap <f1> <Plug>(coc-terminal-toggle)<CR>
 nmap <C-l> :ls<CR>
-nmap <leader>n :bn<CR>
+nmap <Tab> :bn<CR>
 nmap <leader>b :bp<CR>
 nmap <leader>h :split<CR>
 nmap <leader>v :vsplit<CR>
-nmap <leader>s :CocList marketplace<CR>
+nmap <leader>x :CocList marketplace<CR>
 
 let g:seoul256_background = 237
 colo seoul256
